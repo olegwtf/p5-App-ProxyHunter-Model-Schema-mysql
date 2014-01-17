@@ -11,6 +11,7 @@ WriteMakefile(
 		DBD::mysql::              => 0,
 		DateTime::Format::MySQL:: => 0
 	},
+	BUILD_REQUIRES     => { 'Test::More' => 0.88 },
 	CONFIGURE_REQUIRES => {
 		'ExtUtils::MakeMaker' => 6.52,
 	},
