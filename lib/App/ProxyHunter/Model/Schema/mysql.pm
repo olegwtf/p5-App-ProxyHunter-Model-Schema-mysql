@@ -69,3 +69,19 @@ CREATE TABLE `proxy` (
   KEY `sort` (`checked`,`checkdate`),
   KEY `type` (`type`)
 );
+__END__
+
+=pod
+
+=head1 NAME
+
+App::ProxyHunter::Schema::Model::mysql - MySQL schema for App::ProxyHunter
+
+=SYNOPSIS
+
+	# just edit proxuhunter's config
+	db = {
+		driver: "mysql"
+	}
+
+=cut
