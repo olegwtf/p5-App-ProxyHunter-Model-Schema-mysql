@@ -48,6 +48,34 @@ table {
 
 1;
 
+=pod
+
+=head1 NAME
+
+App::ProxyHunter::Model::Schema::mysql - MySQL schema for App::ProxyHunter
+
+=head1 SYNOPSIS
+
+	# just edit proxyhunter's config
+	db = {
+		driver: "mysql"
+	}
+
+=head1 SEE ALSO
+
+L<App::ProxyHunter>
+
+=head1 AUTHOR
+
+Oleg G, E<lt>oleg@cpan.orgE<gt>
+
+=head1 COPYRIGHT AND LICENSE
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself
+
+=cut
+
 __DATA__
 CREATE TABLE `proxy` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -69,19 +97,3 @@ CREATE TABLE `proxy` (
   KEY `sort` (`checked`,`checkdate`),
   KEY `type` (`type`)
 );
-__END__
-
-=pod
-
-=head1 NAME
-
-App::ProxyHunter::Schema::Model::mysql - MySQL schema for App::ProxyHunter
-
-=SYNOPSIS
-
-	# just edit proxuhunter's config
-	db = {
-		driver: "mysql"
-	}
-
-=cut
