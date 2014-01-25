@@ -63,6 +63,10 @@ App::ProxyHunter::Model::Schema::mysql - MySQL schema for App::ProxyHunter
 		driver: "mysql"
 	}
 
+=head1 DESCRIPTION
+
+You need to create database yourself, then use C<proxyhunter --create-schema> to create tables structure
+
 =head1 SEE ALSO
 
 L<App::ProxyHunter>
